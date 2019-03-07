@@ -1,1 +1,1 @@
-console.log(`pid of this process is ${process.pid}`);
+process.on('exit', code => console.log(`process with ${process.pid} is finished now with code ${code}`));
